@@ -1,0 +1,21 @@
+1.URI Error:-
+
+EvalError:-
+   -Constrctor
+   -Used to generate the instance of EvalError.
+   -Syntax:-
+     new EvalError();
+     new EvalError(message);
+     new EvalError(message,cause,filename);
+     new EvalError(message,cause,filename,linenumber);
+     new EvalError(message,cause,filename,linenumber,columnnnumber);
+     for Example:-
+       new EvalError("Hello-sec-C");
+   Debugging:-
+     -Used for testing purpose
+        debugger
+        document.write(a+20);
+        debugger
+Strict Mode:-
+   
+     

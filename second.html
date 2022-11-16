@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function upper_case(str)
+{
+    regex=/^[A-Z]/;
+    if(regex.test(str))
+    {
+        document.write("First letter is a upper case\n");
+    }
+    else{
+        document.write("not a upper case letter")
+    }
+}
+upper_case('aBCD');
+upper_case('Abcd');
+    </script>
+    
+</body>
+</html>

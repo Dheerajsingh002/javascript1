@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="t1">
+    <button type="submit" onclick="call()">Click Me</button>
+    <script>
+        function call()
+        {
+            try{
+                var out=document.getElementById("t1").value;
+                if(out==="")
+            {
+                throw "please Enter Somethiing";
+            }
+            else if(isNaN(out))
+            {
+                throw "This is not Number";
+            }
+            else if(out>parseInt(out))
+            { 
+                throw "Not Comparable";
+            }
+           var b= parseInt(out);
+           if(b<18)
+           throw "Not Eligible for registration";
+           if(b>30)
+           {
+            throw "Value is greater than 30";
+           }
+            }
+            catch(e)
+            {
+                document.write(e);
+            }
+            if(b>18 && b<=30)
+            document.write("Eligible for Registration");  
+        }
+    </script>
+    
+</body>
+</html>

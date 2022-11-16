@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Phone(str)
+        {
+            regex=/^[2|3][5|6][0-9]\d{8}/;
+            if(regex.test(str))
+            {
+                document.write("Phone number is Valid");
+            }
+            else
+            {
+                document.write("Phone number is not valid");
+            }
+
+        }
+        Phone("2587647834");
+    </script>
+    
+</body>
+</html>

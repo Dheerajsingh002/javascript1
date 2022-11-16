@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+
+        }
+       body{
+        /* text-align: center; */
+        /* font-size: 50px; */
+       }
+       h1{
+        text-align: center;
+       }
+       .forms{
+        display: flex;
+        float: left;
+        margin-left: 200px;
+        border: 5px solid black;
+        height: 500px;
+        width: 70%;
+        background-color: black;
+        color: white;
+        border:7px 2px 2px  solid rgb(145, 126, 126);
+        border-radius: 20px;
+        animation-name: example;
+        animation-duration: 3000ms;
+        animation-iteration-count: infinite;
+        transition: 0.3ms;
+       
+       }
+       /* @keyframes example{
+        from{
+            background-color: black;
+
+        } */
+        /* to{
+            background-color: beige;
+            color: black;
+        }
+       } */
+       .forms:hover
+       {
+        
+       background-color: beige;
+       color: black;
+       }
+       #f1{
+        margin-left: 45px;
+        margin-top: 20px;
+       }
+       #f{
+        margin-left:30px;
+        margin-top: 20px;
+       }
+       body{
+       
+        
+       }
+       #s1{
+        margin-left: 40px;
+        height: 30px;
+        width: 100px;
+       }
+       #s1:hover{
+        color: red;
+        background-color: yellow;
+       }
+       input{
+        color: red;
+       }
+       textarea{
+        color: red;
+       }
+       
+    </style>
+</head>
+<body>
+    <h1>Sponser Registration</h1>
+    <div class="forms">
+        <form action="" id="f">
+            prefix:<br>
+            <input type="text" placeholder="enter the name"><br>
+            Name:<br>
+            <input type="text" placeholder="First Name">  <input type="text" placeholder="Last Name"><br>
+            Prefered Pronouns:<br>
+            <input type="text"><br><br>
+            Email:<br>
+            <input type="email" placeholder="Enter the Email"><br>
+            Work Phone:<br>
+            <input type="number" max="10" placeholder="enter the phone number"><br>
+            cell Phone:<br>
+            <input type="number" max="10" placeholder="enter the phone number"><br>
+            Job Title:<br>
+            <input type="text" placeholder="enter the job title"><br>
+            Company:<br>
+            <input type="text" placeholder="Company name"><br>
+            Pull Business Address:<br>
+            <input type="text"><br>
+            Company Website:<br>
+            <input type="text">
+        </form><hr>
+        <form action="" id="f1">
+            <label for="">Company Discription:</label><br>
+            <textarea name="" id="" cols="30" rows="10" style="height:25px"></textarea><br><br>
+            <label for="">Company Facebook Page:</label>
+            <textarea name="" id="" cols="30" rows="10" style="height:25px"></textarea><br><br>
+            <label for="">Company Twitter Handle:</label>
+            <textarea name="" id="" cols="30" rows="10" style="height:25px"></textarea><br><br>
+            <label for="">Company Linkdin Handle:</label>
+            <textarea name="" id="" cols="30" rows="10" style="height:25px"></textarea><br><br>
+            <label for="">Sponsership Level:</label><br><bR>
+            <input type="radio">Gold<br>
+            <input type="radio">Diamond<br>
+            <input type="radio">Platinum<br><br>
+            <label for="">Additional Guest(name,email):</label>
+            <textarea name="" id="" cols="30" rows="10" style="height:25px"></textarea><br>
+            <input type="submit" id="s1">
+        </form>  
+    </div>
+    
+    
+    
+</body>
+</html>
