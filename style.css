@@ -1,0 +1,153 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar{
+    display: flex;
+    align-items: centers;
+    position: relative;
+}
+/* logo and image */
+#logo{
+   margin: 6px -15px;
+}
+#logo img{
+    height: 70px;
+    margin: 1px 38px;
+}
+/* Navigation bar : Styling*/
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 83%;
+    width: 100%;
+    z-index: -1 ;
+    opacity: 0.4;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar li{
+    list-style: none;
+    font-size: 1rem;
+
+}
+#navbar li a{
+    text-decoration: none;
+    display: block;
+    margin :10px 20px;
+    padding: 10px;
+    color: white;
+
+}
+#navbar li a:hover{
+    
+    color:black;
+    background-color: white;
+    border-radius: 15px;
+
+}
+/*Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 200px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    color:black;
+}
+#home::before{
+    content: "";
+    background: url(https://img.freepik.com/free-photo/assorted-fruit-yellow-background_23-2148145132.jpg?w=2000) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1 ;
+    opacity: 0.8;
+
+}
+#home h1{
+    font-size: 2.65rem;
+    padding: 10px;
+
+}
+#home p{
+    padding: 5px;
+    font-size: 1.3rem;
+    color: black;
+  
+}
+
+#home button{
+    padding: 10px 12px;
+    color: white;
+    background-color:rgb(14, 23, 13);
+    border-radius: 15px;
+    width: 130px;
+    margin: 10px;
+}
+
+#home button:hover{
+
+    color: black;
+    background-color:whitesmoke;
+    cursor: pointer;
+}
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.center{
+    text-align: center;
+}
+#heading{
+    margin: 0px;
+    padding-top: 170px;
+    padding-bottom: 50px;
+}
+#services{
+    margin: 10px;
+    display: flex;
+    
+}
+.box{
+     margin: 23px;
+    border: 2px solid rgb(11, 10, 10);
+    padding: 0px 14px;
+    padding-bottom: 12px;
+    border-radius: 25px;
+    background-color: rgb(255, 250, 242);
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxi_mryov5zVEmSI1rioxK9qv7OXMiv3XDAg&usqp=CAU) no-repeat center center/cover;
+
+}
+p{
+    color: white;
+}
+h2{
+    color: white;
+}
+#services img{
+    height: 163px;
+    margin: auto;
+    display: block;
+
+}
+#hed{
+    margin: 20px;
+}
+#partener-section{
+    display: flex;
+   
+}
+.partener img{
+    height: 200px;
+    width: 250px;
+    margin: 50px;
+}
