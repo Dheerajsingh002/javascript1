@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="di1">
+        <h1>h1</h1>
+        <p>p1</p>
+        <span>Span 1</span>
+        a
+        click me
+    </div>
+    <script>
+        var out=document.querySelector('div');
+        var out1=document.querySelector('div p');
+        const click=()=>{
+            out.style.backgroundColor='blue';
+        }
+        // out1.onclick=click;
+        out1.addEventListener('click',click)
+    </script>
+    
+</body>
+</html>
