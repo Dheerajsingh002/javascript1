@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <ul id="customers">
+          <li>
+            <p>John</p>
+            <p>john@example.com</p>
+          </li>
+          <li>
+            <p>Mary</p>
+          </li>
+        </ul>
+      </div>
+      <script>
+        function showCustomers(customers, targetList){
+            for(var customer in customers){
+             let li = document.createElement('li');
+             let p = document.createElement('p');
+             li.appendChild(p);
+            let name = document.createTextNode(customers[customer].name);
+            p.appendChild(name);
+            targetList.appendChild(li);
+           }
+           var first_P_elements =[...document.getElementsByTagName('li')];
+            first_P_elements.forEach(function(el,i){
+             el.children[0].addEventListener('click',function(){
+              if(el.children.length>1){
+                el.children[1].remove();
+              }else 
+              {
+             let p2 = document.createElement('p');
+             let email = document.createTextNode(customers[i].email);  
+             p2.appendChild(email);
+            this.parentElement.appendChild(p2);
+                  }
+              });
+           });
+            }
+          
+          document.body.innerHTML = `
+          <div>
+            <ul id="customers">
+            </ul>
+          </div>
+          `;
+          let customers = [{name: "John", email: "john@example.com"},
+                           {name: "Mary", email: "mary@example.com"}];
+          showCustomers(customers, document.getElementById("customers"));
+          
+          let customerParagraph = document.querySelectorAll("li > p")[0];
+          if(customerParagraph) {
+            customerParagraph.click();
+          }
+          console.log(document.body.innerHTML);
+      </script>
+    
+</body>
+</html>
