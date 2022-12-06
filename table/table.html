@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  #txt{
+    font-size: 30px;
+    font-style:normal;
+    font-weight: 500;
+  }
+  #inpt{
+    border-radius: 20px;
+    font-size: larger;
+    font-weight: 300;
+    
+  }
+  #btn{
+    background-color: #fbfbfb; /* Green */
+  
+  color: rgb(231, 16, 16);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20px;
+  border-color:purple;
+  }
+  #container{
+    
+  }
+  table{
+    border-collapse:collapse;
+
+  }
+</style>
+<body>
+    <form  method="POST">
+      <div id="container">
+        <table border="4">
+        <tr><td><label for="" id="txt">Enter ID to delete :</label></td>
+        <td><input type="number" name="uid" id="inpt"></td><br></tr>
+        <tr><td><label for="" id="txt" >Enter Username :</label></td>
+        <td><input type="text" name="uname" id="inpt"></td><br></tr>
+        <tr><td><label for="" id="txt">Enter Email :</label></td>
+        <td><input type="text" name="eml" id="inpt"></td><br></tr>
+        <tr>
+           <td colspan="2"><input type="submit" name="save" value="save" id="btn" >
+           <input type="submit" name="display" value="display" id="btn">
+           <input type="submit" name="delete" value="Delete" id="btn">
+           <input type="submit" name="update" value="Update" id="btn"></td>
+        </tr>
+        </table></div></form>
+</body>
+</html>

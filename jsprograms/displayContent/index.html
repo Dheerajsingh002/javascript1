@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            font-size: 20px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>Display Contents in the elements.</h2>
+    <p id="test"></p>
+    <h2>Represent the formatting using javascript.</h2>
+    <p id="test1"></p>
+    <h2>Use Single line to represent the formatting.</h2>
+    <p id="Single"></p>
+    <button onclick="document.getElementById('Single').innerHTML='<h1>Use Event and function to represent the contents<h1>'">Click Me</button>
+   <h2> Use Event and function to represent the contents.</h2>
+   <p id="content"></p>
+   <button onclick="clickme()">Click Me</button>
+   <h2>Use Event and function to represent theformatting.</h2>
+   <p id="content1"></p>
+   <button onclick="clickformat()">Click Me</button>
+    </h2>
+    <script>
+        document.getElementById('test').innerHTML="Hello, My name is Xyz";
+        document.getElementById('test1').innerHTML="<h1>Hello My name is Xyz</h1>"
+        function clickme()
+        {
+            document.getElementById('content').innerHTML="Use Event and function to represent the contents";
+        }
+        function clickformat()
+        {
+            document.getElementById('content1').innerHTML="<h1>Use Event and function to represent the contents<h1>";
+        }
+    </script>
+    
+</body>
+</html>
